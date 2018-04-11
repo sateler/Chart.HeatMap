@@ -1,3 +1,9 @@
+ /**
+  * Customized to be able to coexist with a different version of ChartJs.
+  * See changes: https://github.com/sateler/Chart.HeatMap/tree/do_not_expose_internal_chartjs
+  * The Chart.js version included here, will be accesible at root.ChartOld.
+  */
+
 /*!
  * Chart.js
  * http://chartjs.org/
@@ -2011,7 +2017,7 @@
 		module.exports = Chart;
 	}
 
-	root.Chart = Chart;
+	root.ChartOld = Chart;
 
 	Chart.noConflict = function(){
 		root.Chart = previous;
@@ -2327,7 +2333,7 @@ var ColorManager = function(){
 	"use strict";
 
 	var root = this,
-		Chart = root.Chart,
+		Chart = root.ChartOld,
 		helpers = Chart.helpers;
 
 	var defaultConfig = {

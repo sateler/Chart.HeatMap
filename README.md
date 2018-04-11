@@ -1,4 +1,6 @@
 # Chart.HeatMap.js
+Customized version: Publish bundled Chart.js under root.ChartOld, to be able to coexist with other installed Chartjs versions.
+------
 HeatMap library and plug-in for Chart.js.
 
 ## Documentation
